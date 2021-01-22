@@ -29,7 +29,6 @@ const tabs = (headerSelector, tabsSelector, contentSelector, activeClass, displa
         target.parentNode.classList.contains(tabsSelector.replace(/\./, "")))) {
             tabs.forEach((item, i) => {
                 if(target == item || target.parentNode == item) {
-                    console.log('ckicked');
                     hideTabsContent();
                     showTabsContent(i);
                 }
